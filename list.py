@@ -1,0 +1,44 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+#定义一个列表L，对其进行添加，插入，删除，替换，获取
+L = ['Java','ASP','PHP','python','ruby','C#']
+print('原列表L:',L)
+L.append('objectx')
+print('添加新的语言:',L)
+L.insert(2,'Javascript')
+print('第3个元素中插入新的元素:',L)
+L.pop(2)
+print('删除第二个元素:',L)
+L[0]='Python'
+print('列表第一个被替换:',L)
+print('获取第一个元素:',L[0])
+print('获取最后一个元素:',L[-1])
+#定义一个元组classmates，元组不能进行修改，只能获取元素
+classmates=('Michael','Bob','Tracy')
+print('定义一个元组:',classmates)
+#为了避免歧义，定义一个只有1个元素的元组，必须加一个逗号
+student=(1,)
+print('定义一个只有一个元素的元组:',student)
+name=('Jack','Joe',['Rose','Lily'])
+print('含有列表的一个元祖:',name)
+#对元组中的列表的元素进行新的赋值
+name[2][0]='May'
+name[2][1]='Ben'
+print('元组中的列表元素修改之后的元组:',name)
+'''
+练习
+多行注释
+取出list的指定元素
+'''
+List=[
+['Apple','Google','Microsoft'],
+['Java','Python','Ruby','PHP'],
+['Adam','Bart','Lisa']
+]
+print('列表元素List:',List)
+#打印Apple
+print('打印Apple:',List[0][0])
+#打印Python
+print('打印Python:',List[1][1])
+#打印Lisa
+print('打印Lisa:',List[2][2])
